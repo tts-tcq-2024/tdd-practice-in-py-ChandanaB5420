@@ -20,7 +20,7 @@ class TestStringCalculator(unittest.TestCase):
         def test_expectSumWithNewlineDelimiter(self):
                 self.assertEqual(add("1\n2,3"),6);
 
-        # New test cases
+        # New test case
         def test_negativeNumbersRaiseException(self):
                 with self.assertRaises(ValueError) as context:
                     add("1,-2,-3") 
