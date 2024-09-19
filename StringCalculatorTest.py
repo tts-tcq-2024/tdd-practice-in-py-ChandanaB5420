@@ -39,7 +39,7 @@ class TestStringCalculator(unittest.TestCase):
         # Test case TC10
                  with self.assertRaises(ValueError) as context:
                     add("1,-5,3,-10")
-                  self.assertIn("Negative numbers are not allowed: [-5, -10]", str(context.exception))
+                self.assertIn("Negative numbers are not allowed: [-5, -10]", str(context.exception))
 
         def test_expectSumWithCustomDelimiterAmpersand(self):
         # Test case TC11
